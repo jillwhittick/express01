@@ -2,4 +2,11 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Please enter your name.
+
+  form(name="enter-name", method="post")
+      div.input
+          span.label Name: 
+          input(type="text", name="name")
+      div.actions
+          input(type="submit", value="Submit")
