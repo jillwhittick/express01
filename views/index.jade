@@ -4,7 +4,7 @@ block content
   h1= title
   p Please enter your name.
 
-  form(name="enter-name", method="post")
+  form(name="enter-name", method="post" action="/hello")
       div.input
           span.label Name: 
           input(type="text", name="name")

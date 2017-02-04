@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Hello' });
 });
 
-router.post('/', function (req, res) {
+router.post('/hello', function(req, res, next) {
     console.log(req.body.name);
     res.render('hello', {name: req.body.name });
 });
